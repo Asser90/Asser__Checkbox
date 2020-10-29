@@ -1,0 +1,73 @@
+.asser__input_checkbox {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border: 2px solid #4e73df;
+  border-radius: 4px;
+  padding: .375rem .75rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.asser__input_checkbox_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #495057;
+}
+
+.asser__input_checkbox_checkmark {
+  height: 20px;
+  width: 20px;
+  background: #ffffff;
+  display: block;
+  border: 2px solid #707070;
+  border-radius: 4px;
+}
+
+.asser__input_checkbox_checkmark:after {
+  content: "";
+  display: none;
+}
+
+input.asser__input_checkboxx {
+  display: none;
+}
+
+input.asser__input_checkboxx:checked + label.asser__input_checkbox {
+  background: #4e73df;
+}
+
+input.asser__input_checkboxx:checked + label.asser__input_checkbox > span.asser__input_checkbox_text {
+  color: #ffffff;
+}
+
+input.asser__input_checkboxx:checked + label.asser__input_checkbox > span.asser__input_checkbox_checkmark {
+  background: #1cc88a;
+  border-color: #ffffff;
+}
+
+input.asser__input_checkboxx:checked + label.asser__input_checkbox > span.asser__input_checkbox_checkmark:after {
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  margin-left: 4px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+}
+/*# sourceMappingURL=app.css.map */
